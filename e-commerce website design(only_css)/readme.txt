@@ -1,1 +1,1 @@
-
+Here, I designed an e-commerce website similar to the examples I came across in the trainings I took to learn css, that is, design. Looking at the work done, I learned a little more about css by putting something from myself on it.
