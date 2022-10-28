@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link type="image/png" rel="icon" size="512x512" href="icons/shoes.png">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="revisit-after" content="7 Days">
+    <meta name="rating" content="general">
+    <meta name="copyright" content="Copyright &copy; 2022-2023 Halil Ibrahim BAYAT All rights reserved.">
+    <meta name="reply-to" content="halilibayat.com">
+    <meta name="author" content="Halil Ibrahim BAYAT - programmer">
+    <meta name="designer" content="Halil Ibrahim BAYAT">
+    <meta name="generator" content="Visual Studio Code Vcode">
+    <meta name="description" content="Best online shoes shopping web site. You can find all kind shoes that you needed. Sport, Outdoor, Running, Classic">
+    <meta name="keywords" content="Shop, shoping,shoes,sport shoes">
+    <script type="text/javascript" language="javascript" src="framework/jquery-3.6.1.min.js"></script>
+    <title>Shoes Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/28f6175930.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="all-page">
+        <header>
+            <div id="header-area">
+                <div id="header-message">                    
+                    <img id="header-message-img1" src="imgs/shoes_banner.png" alt="banner">                  
+                </div>
+                <div class="header-manu">                
+                    <div class="header-manu-top">
+                        <div class="header-manu-top-restrict-area">
+                            <ul class="header-manu-top-options">
+                                <!--User no sign in -->
+                                
+                                <li class="manu-option"><a href="signIn.html"> <i class="fa-solid fa-right-to-bracket fa-lg"></i></a></li>
+                                <li class="manu-option"><a href="signIn.html">Sign In</a></li>
+                                <li class="manu-option"><a href="register.html"><i class="fa-solid fa-user-plus fa-lg"></i></a></li>
+                                <li class="manu-option"> <a href="register.html">Register</a></li>
+                                <li class="manu-option"> <a href="basket.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
+                                <li class="manu-option"> <a href="basket.html">Shopping Basket</a></li>
+                                                           
+                                <!-- user already singed up-->   
+                                <!-- 
+                                <li class="manu-option"><a href="signOut.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                                <li class="manu-option"><a href="signOut.html">Sign Out</a></li>
+                                <li class="manu-option"><a href="myAccount.html"><i class="fa-regular fa-user"></i></a></li>
+                                <li class="manu-option"><a href="myAccount.html">My Account</a></li>
+                                <li class="manu-option"><a href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li class="manu-option"><a href="basket.html">Shopping Basket</a></li> 
+                                -->
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="header-manu-restricted-area">
+                        <div id="header-manu-logo-area">
+                            <a href="index.html"><img src="icons/logo_shoes2.png" alt="logo"></a>                                
+                        </div>
+                        <div id="header-manu-nav-area">
+                            <nav id="header-manu-nav">
+                                <ul id="header-manu-options-area">
+                                    <li class="header-manu-option"><a href="index.html">Home</a></li>
+                                    <li class="header-manu-option"><a href="manShoes.html">Man Shoes</a></li>
+                                    <li class="header-manu-option"><a href="womenShoes.html">Woman Shoes</a></li>
+                                    <li class="header-manu-option"><a href="kidShoes.html">Kids Shoes</a></li>
+                                </ul>
+                            </nav>                            
+                        </div>
+                        
+                        <div id="header-new-manu">
+                            <i class="fa-solid fa-bars fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-manu-opened-area" style="display:none;">
+                    <div id="header-manu-opened-button">
+                        <ul id="header-manu-opened-button-options">
+                            <li class="header-manu-opened-option"><a href="index.html">Home</a></li>
+                            <li class="header-manu-opened-option"><a href="manShoes.html">Man Shoes</a></li>
+                            <li class="header-manu-opened-option"><a href="womenShoes.html">Woman Shoes</a></li>
+                            <li class="header-manu-opened-option"><a href="kidShoes.html">Kids Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+           <div id="full-page-border-area">
+            <div id="full-page-border-restricted-are">
+                <div id="full-page-border-in-100-area">
+                    <div class="full-page-boder-in-underline">
+                        <div class="full-page-boder-in-underline-upper">
+                            My Account &#62; Details
+                        </div>
+                        <div class="full-page-border-in-underline-bottom">
+                            You can view the order details in this area.
+                        </div>
+
+                        <div id="my-account-menues-area">
+                            <div id="my-account-balance-area">
+
+                                <div class="my-account-restrict-area">
+                                   <div class="my-account-all-menu-text-area">
+                                        <div class="my-account-all-text">
+                                            <a href="my-account.html" target="_top">Purchases</a>
+                                        </div>
+                                   </div>
+                                </div>
+
+                                <div class="my-account-restrict-area">
+                                   <div class="my-account-all-menu-text-area">
+                                        <div class="my-account-all-text">
+                                            <a href="my-comments.html" target="_top">Comments</a>
+                                        </div>
+                                   </div>
+                                </div>
+
+                                <div class="my-account-restrict-area">
+                                   <div class="my-account-all-menu-text-area">
+                                        <div class="my-account-all-text">
+                                            <a href="my-account-info.html" target="_top">Account Info</a>
+                                        </div>
+                                   </div>
+                                </div>
+
+                                <div class="my-account-restrict-area">
+                                   <div class="my-account-all-menu-text-area">
+                                        <div class="my-account-all-text">
+                                            <a href="my-account-adress.html" target="_top">Adresses</a>
+                                        </div>
+                                   </div>
+                                </div>
+
+                                <div class="my-account-restrict-area">
+                                   <div class="my-account-all-menu-text-area">
+                                        <div class="my-account-all-text">
+                                            <a href="my-favorites.html" target="_top">Favorites</a>
+                                        </div>
+                                   </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                        <div class="my-account-orders-number-header-details-area">Order No: #231234524</div>
+                            
+                        <div class="my-account-orders-details-products-area">
+                            <div class="my-account-orders-details-product-img-area">
+                                <img src="imgs/7.jpg" alt="">
+                            </div>
+                            <div class="my-account-orders-details-product-comments-area">
+                               <a href="make-comment.html" target="_top"><i class="fa-solid fa-comment-dots"></i></a>
+                            </div>
+                            <div class="my-account-orders-details-product-name-area">
+                                Classic brown men's shoes with buckle
+                            </div>
+                            <div class="my-account-orders-details-product-numbers-area">                            
+                                <div class="my-account-orders-details-product-numbers-text-area">
+                                   <b>1</b> item
+                                </div>
+                            </div>
+                            <div class="my-account-orders-details-product-price-area">
+                                250,00$
+                            </div>
+                        </div>
+
+                        <div class="my-account-orders-details-products-area">
+                            <div class="my-account-orders-details-product-img-area">
+                                <img src="imgs/8.jpg" alt="">
+                            </div>
+                            <div class="my-account-orders-details-product-comments-area">
+                               <a href="make-comment.html" target="_top"><i class="fa-solid fa-comment-dots"></i></a>
+                            </div>
+                            <div class="my-account-orders-details-product-name-area">
+                                Unisex dark-green sport shoes
+                            </div>
+                            <div class="my-account-orders-details-product-numbers-area">                            
+                                <div class="my-account-orders-details-product-numbers-text-area">
+                                   <b>1</b> item
+                                </div>
+                            </div>
+                            <div class="my-account-orders-details-product-price-area">
+                                250,00$
+                            </div>
+                        </div>
+
+                        <div class="my-account-orders-details-products-area">
+                            <div class="my-account-orders-details-product-img-area">
+                                <img src="imgs/77.jpg" alt="">
+                            </div>
+                            <div class="my-account-orders-details-product-comments-area">
+                               <a href="make-comment.html" target="_top"><i class="fa-solid fa-comment-dots"></i></a>
+                            </div>
+                            <div class="my-account-orders-details-product-name-area">
+                                Women's high-heeled white shoes
+                            </div>
+                            <div class="my-account-orders-details-product-numbers-area">                            
+                                <div class="my-account-orders-details-product-numbers-text-area">
+                                   <b>1</b> item
+                                </div>
+                            </div>
+                            <div class="my-account-orders-details-product-price-area">
+                                150,00$
+                            </div>
+                        </div>
+
+                        <div class="my-account-orders-details-products-area">
+                            <div class="my-account-orders-details-product-img-area">
+                                <img src="imgs/9.jpg" alt="">
+                            </div>
+                            <div class="my-account-orders-details-product-comments-area">
+                               <a href="make-comment.html" target="_top"><i class="fa-solid fa-comment-dots"></i></a>
+                            </div>
+                            <div class="my-account-orders-details-product-name-area">
+                                Classic Black men's shoes
+                            </div>
+                            <div class="my-account-orders-details-product-numbers-area">                            
+                                <div class="my-account-orders-details-product-numbers-text-area">
+                                   <b>1</b> item
+                                </div>
+                            </div>
+                            <div class="my-account-orders-details-product-price-area">
+                                350,00$
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+           </div>
+        </main>
+    
+        <footer>
+            <div id="footer-menu-area">
+                <div id="footer-menu-restricted-area">
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Corporate</div>
+                        <div class="footer-menu-column-menu-area"><a href="aboutUs.html" target="_top">About Us</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="bankAccounts.html" target="_top">Bank Accounts</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="transferReportForm.html" target="_top">Transfer Report Form</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="ourDealers.html" target="_top">Our Dealers</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="dealershipAppForm.html" target="_top">Dealership Application Form</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="contact.html" target="_top">Contact</a></div>                        
+                    </div>
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Membership & Services</div>
+                        <!--
+                        <div class="footer-menu-column-menu-area"><a href="signIn.html" target="_top">Sign In</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="register.html" target="_top">Register</a></div> 
+                        -->                       
+                        <div class="footer-menu-column-menu-area"><a href="delivery.html" target="_top">Delivery</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="whereCargo.html" target="_top">Where is my cargo?</a></div>
+
+                        <!-- if user signed in-->
+                        <div class="footer-menu-column-menu-area"><a href="myAccount.html" target="_top">My Account</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="signOut.html" target="_top">Logout</a></div>
+                       
+                        <div class="footer-menu-column-menu-area"><a href="faq.html" target="_top">Frequently Asked Questions</a></div>
+                                             
+                    </div>
+
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Contracts</div>
+                        <div class="footer-menu-column-menu-area"><a href="membershipAgr.html" target="_top">Membership Agreement</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="dealershipAgr.html" target="_top">Dealership Agreement</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="termofuse.html" target="_top">Terms of Use</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="privacy.html" target="_top">Privacy and Security </a></div>
+                        <div class="footer-menu-column-menu-area"><a href="dsa.html" target="_top">Distance Sales Agreement</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="pcrr.html" target="_top">Product Cancel, Repayment and Replacement </a></div>                        
+                    </div>
+
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Follow Us</div>
+                        <div class="footer-menu-column-menu-area"><a href="http://facebook.com/" target="_blank">Facebook <i class="fa-brands fa-facebook fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://twitter.com/" target="_blank">Twitter <i class="fa-brands fa-square-twitter fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://instegram.com/" target="_blank">Instagram <i class="fa-brands fa-square-instagram fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://linkedin.com/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://youtube.com/" target="_blank">Youtbe <i class="fa-brands fa-youtube fa-lg"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom-text-area">
+                <div id="footer-bottom-text-restrict-area">
+                    Copyright &copy; 2022-2023 All Rights Reserved HIB.
+                </div>
+            </div>
+            <div id="footer-bottom-logo-area">
+                <div id="footer-bottom-logo-restricted-area">
+                    <div class="footer-bottom-logo"><i class="fa-brands fa-expeditedssl fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-solid fa-shield-halved fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-brands fa-cc-visa fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-brands fa-cc-mastercard fa-2x"></i></div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+</body>
+</html>

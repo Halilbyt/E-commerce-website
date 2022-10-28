@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link type="image/png" rel="icon" size="512x512" href="icons/shoes.png">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="revisit-after" content="7 Days">
+    <meta name="rating" content="general">
+    <meta name="copyright" content="Copyright &copy; 2022-2023 Halil Ibrahim BAYAT All rights reserved.">
+    <meta name="reply-to" content="halilibayat.com">
+    <meta name="author" content="Halil Ibrahim BAYAT - programmer">
+    <meta name="designer" content="Halil Ibrahim BAYAT">
+    <meta name="generator" content="Visual Studio Code Vcode">
+    <meta name="description" content="Best online shoes shopping web site. You can find all kind shoes that you needed. Sport, Outdoor, Running, Classic">
+    <meta name="keywords" content="Shop, shoping,shoes,sport shoes">
+    <script type="text/javascript" language="javascript" src="framework/jquery-3.6.1.min.js"></script>
+    <title>Shoes Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/28f6175930.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="all-page">
+        <header>
+            <div id="header-area">
+                <div id="header-message">                    
+                    <img id="header-message-img1" src="imgs/shoes_banner.png" alt="banner">                  
+                </div>
+                <div class="header-manu">                
+                    <div class="header-manu-top">
+                        <div class="header-manu-top-restrict-area">
+                            <ul class="header-manu-top-options">
+                                <!--User no sign in -->
+                                <li class="manu-option"><a href="signIn.html"> <i class="fa-solid fa-right-to-bracket fa-lg"></i></a></li>
+                                <li class="manu-option"><a href="signIn.html">Sign In</a></li>
+                                <li class="manu-option"><a href="register.html"><i class="fa-solid fa-user-plus fa-lg"></i></a></li>
+                                <li class="manu-option"> <a href="register.html">Register</a></li>
+                                <li class="manu-option"> <a href="basket.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
+                                <li class="manu-option"> <a href="basket.html">Shopping Basket</a></li>                                
+                                <!-- user already singed up-->   
+                                
+                                 <!--   
+                                <li class="manu-option"><a href="signOut.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                                <li class="manu-option"><a href="signOut.html">Sign Out</a></li>
+                                <li class="manu-option"><a href="myAccount.html"><i class="fa-regular fa-user"></i></a></li>
+                                <li class="manu-option"><a href="myAccount.html">My Account</a></li>
+                                <li class="manu-option"><a href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li class="manu-option"><a href="basket.html">Shopping Basket</a></li> 
+                                --> 
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="header-manu-restricted-area">
+                        <div id="header-manu-logo-area">
+                            <a href="index.html"><img src="icons/logo_shoes2.png" alt="logo"></a>                                
+                        </div>
+                        <div id="header-manu-nav-area">
+                            <nav id="header-manu-nav">
+                                <ul id="header-manu-options-area">
+                                    <li class="header-manu-option"><a href="index.html">Home</a></li>
+                                    <li class="header-manu-option"><a href="manShoes.html">Man Shoes</a></li>
+                                    <li class="header-manu-option"><a href="womenShoes.html">Woman Shoes</a></li>
+                                    <li class="header-manu-option"><a href="kidShoes.html">Kids Shoes</a></li>
+                                </ul>
+                            </nav>                            
+                        </div>
+                        
+                        <div id="header-new-manu">
+                            <i class="fa-solid fa-bars fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-manu-opened-area" style="display:none;">
+                    <div id="header-manu-opened-button">
+                        <ul id="header-manu-opened-button-options">
+                            <li class="header-manu-opened-option"><a href="index.html">Home</a></li>
+                            <li class="header-manu-opened-option"><a href="manShoes.html">Man Shoes</a></li>
+                            <li class="header-manu-opened-option"><a href="womenShoes.html">Woman Shoes</a></li>
+                            <li class="header-manu-opened-option"><a href="kidShoes.html">Kids Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+           <div id="full-page-border-area">
+            <div id="full-page-border-restricted-are">
+                
+                <form id="form-cart" action="shopping-payment.html">
+                    <div id="full-page-cartPage-left-area">
+                        <div class="full-page-boder-in-underline">
+                            <div class="full-page-boder-in-underline-upper">
+                                Payment method
+                            </div>
+                            <div class="full-page-boder-in-underline-under">
+                                Specify the payment method below
+                            </div>
+                        </div>
+
+                        <div class="payment-options-area">
+                            <div class="payment-options-header-area">
+                                Payment system selection
+                            </div>
+                            
+                            <div class="peyment-options-selection-area">
+                                <div class="peyment-options-selection-balance-area">
+                                   
+                                   <div class="peyment-options-selection-restrict-area">
+                                        <div class="peyment-options-selection-logo-area">
+                                            <img src="imgs/KrediKarti92x75.png" alt="">
+                                        </div>
+                                        <div class="peyment-options-selection-table-area">
+                                            <table class="peyment-options-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="left" valign="top" class="peyment-options-selection-table-radio-btn">
+                                                            <div class="peyment-options-selection-radio-btn-area">
+                                                                <label class="peyment-options-selection-radio-btn-restrict-area">
+                                                                    <input type="radio" name="payment-selection" value="Credi Card" onClick="$.crediCardSelected();" checked="checked" class="peyment-options-selection-radio-btn-inputs">
+                                                                    <span class="peyment-options-selection-radio-btn-style-area"></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="peyment-options-selection-table-header-column">
+                                                            Via Credi Card
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                   </div> 
+
+                                    <div class="peyment-options-selection-restrict-area">
+                                        <div class="peyment-options-selection-logo-area">
+                                            <img src="imgs/Mobil70x75.png" alt="">
+                                        </div>
+                                        <div class="peyment-options-selection-table-area">
+                                            <table class="peyment-options-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="left" valign="top" class="peyment-options-selection-table-radio-btn">
+                                                            <div class="peyment-options-selection-radio-btn-area">
+                                                                <label class="peyment-options-selection-radio-btn-restrict-area">
+                                                                    <input type="radio" name="payment-selection" value="Mobil-Payment" onClick="$.mobileSelected();" class="peyment-options-selection-radio-btn-inputs">
+                                                                    <span class="peyment-options-selection-radio-btn-style-area"></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="peyment-options-selection-table-header-column">
+                                                            Via Mobil-Payment 
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div> 
+
+
+                                    <div class="peyment-options-selection-restrict-area">
+                                        <div class="peyment-options-selection-logo-area">
+                                            <img src="imgs/Banka80x75.png" alt="">
+                                        </div>
+                                        <div class="peyment-options-selection-table-area">
+                                            <table class="peyment-options-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="left" valign="top" class="peyment-options-selection-table-radio-btn">
+                                                            <div class="peyment-options-selection-radio-btn-area">
+                                                                <label class="peyment-options-selection-radio-btn-restrict-area">
+                                                                    <input type="radio" name="payment-selection" value="Payment by bank transfer " onClick="$.bankcardSelected();" class="peyment-options-selection-radio-btn-inputs">
+                                                                    <span class="peyment-options-selection-radio-btn-style-area"></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="peyment-options-selection-table-header-column">
+                                                            Via Bank transfer 
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Credit card sub menu area-->
+
+                        <div id="credit-card-payment" class="payment-credi-card-area">
+                                <div class="payment-credi-card-header-area">Payment via Credi Card </div>
+                                <div class="payment-credi-card-header-text-area">
+                                    Please select the credit card you will pay with below.
+                                    You can choose "others" for an external card of options.
+                                </div>
+                                <div class="payment-credi-card-selection-area">
+                                    <div class="payment-credi-card-selection-balance-area">
+
+                                        <div class="payment-credi-card-selection-restrict-area">
+                                            <div class="payment-credi-card-selection-logo-area">
+                                                <img src="imgs/OdemeSecimiAxessCard.png" alt="">
+                                            </div>
+                                            <div class="crediCard-brand-selection-area">
+                                                <table class="crediCard-brand-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="crediCard-brand-selection-table-radio-btn-column">
+                                                                <div class="crediCard-brand-selection-table-radio-btn-area">
+                                                                    <label class="crediCard-brand-selection-table-radio-btn-restrict-area">
+                                                                        <input type="radio" name="credi-card-selection" value="Axess Card" class="crediCard-brand-selection-radio-btn-inputs">
+                                                                        <span class="crediCard-brand-selection-radio-btn-style-area"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="payment-credi-card-selection-restrict-area">
+                                            <div class="payment-credi-card-selection-logo-area">
+                                                <img src="imgs/OdemeSecimiBonusCard.png" alt="">
+                                            </div>
+                                            <div class="crediCard-brand-selection-area">
+                                                <table class="crediCard-brand-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="crediCard-brand-selection-table-radio-btn-column">
+                                                                <div class="crediCard-brand-selection-table-radio-btn-area">
+                                                                    <label class="crediCard-brand-selection-table-radio-btn-restrict-area">
+                                                                        <input type="radio" name="credi-card-selection" value="Bonus-Card" class="crediCard-brand-selection-radio-btn-inputs">
+                                                                        <span class="crediCard-brand-selection-radio-btn-style-area"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="payment-credi-card-selection-restrict-area">
+                                            <div class="payment-credi-card-selection-logo-area">
+                                                <img src="imgs/OdemeSecimiMaximumCard.png" alt="">
+                                            </div>
+                                            <div class="crediCard-brand-selection-area">
+                                                <table class="crediCard-brand-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="crediCard-brand-selection-table-radio-btn-column">
+                                                                <div class="crediCard-brand-selection-table-radio-btn-area">
+                                                                    <label class="crediCard-brand-selection-table-radio-btn-restrict-area">
+                                                                        <input type="radio" name="credi-card-selection" value="Maximum Card" class="crediCard-brand-selection-radio-btn-inputs">
+                                                                        <span class="crediCard-brand-selection-radio-btn-style-area"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="payment-credi-card-selection-restrict-area">
+                                            <div class="payment-credi-card-selection-logo-area">
+                                                <img src="imgs/OdemeSecimiWorldCard.png" alt="">
+                                            </div>
+                                            <div class="crediCard-brand-selection-area">
+                                                <table class="crediCard-brand-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="crediCard-brand-selection-table-radio-btn-column">
+                                                                <div class="crediCard-brand-selection-table-radio-btn-area">
+                                                                    <label class="crediCard-brand-selection-table-radio-btn-restrict-area">
+                                                                        <input type="radio" name="credi-card-selection" value="World Card" class="crediCard-brand-selection-radio-btn-inputs">
+                                                                        <span class="crediCard-brand-selection-radio-btn-style-area"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="payment-credi-card-selection-restrict-area">
+                                            <div class="payment-credi-card-selection-logo-area">
+                                                <img src="imgs/OdemeSecimiCardFinans.png" alt="">
+                                            </div>
+                                            <div class="crediCard-brand-selection-area">
+                                                <table class="crediCard-brand-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="crediCard-brand-selection-table-radio-btn-column">
+                                                                <div class="crediCard-brand-selection-table-radio-btn-area">
+                                                                    <label class="crediCard-brand-selection-table-radio-btn-restrict-area">
+                                                                        <input type="radio" name="credi-card-selection" value="Card-Finanse" class="crediCard-brand-selection-radio-btn-inputs">
+                                                                        <span class="crediCard-brand-selection-radio-btn-style-area"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="payment-credi-card-selection-restrict-area">
+                                            <div class="payment-credi-card-selection-logo-area">
+                                                <img src="imgs/OdemeSecimiParafCard.png" alt="">
+                                            </div>
+                                            <div class="crediCard-brand-selection-area">
+                                                <table class="crediCard-brand-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="crediCard-brand-selection-table-radio-btn-column">
+                                                                <div class="crediCard-brand-selection-table-radio-btn-area">
+                                                                    <label class="crediCard-brand-selection-table-radio-btn-restrict-area">
+                                                                        <input type="radio" name="credi-card-selection" value="Paraf-Card" class="crediCard-brand-selection-radio-btn-inputs">
+                                                                        <span class="crediCard-brand-selection-radio-btn-style-area"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="payment-credi-card-selection-restrict-area">
+                                            <div class="payment-credi-card-selection-logo-area">
+                                                <img src="imgs/OdemeSecimiDigerKartlar.png" alt="">
+                                            </div>
+                                            <div class="crediCard-brand-selection-area">
+                                                <table class="crediCard-brand-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="crediCard-brand-selection-table-radio-btn-column">
+                                                                <div class="crediCard-brand-selection-table-radio-btn-area">
+                                                                    <label class="crediCard-brand-selection-table-radio-btn-restrict-area">
+                                                                        <input type="radio" name="credi-card-selection" value="Other" checked="checked" class="crediCard-brand-selection-radio-btn-inputs">
+                                                                        <span class="crediCard-brand-selection-radio-btn-style-area"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="payment-credi-card-selection-restrict-area">
+                                            <div class="payment-credi-card-selection-logo-area">
+                                                <img src="imgs/OdemeSecimiATMKarti.png" alt="">
+                                            </div>
+                                            <div class="crediCard-brand-selection-area">
+                                                <table class="crediCard-brand-selection-table" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="crediCard-brand-selection-table-radio-btn-column">
+                                                                <div class="crediCard-brand-selection-table-radio-btn-area">
+                                                                    <label class="crediCard-brand-selection-table-radio-btn-restrict-area">
+                                                                        <input type="radio" name="credi-card-selection" value="ATM-Card" class="crediCard-brand-selection-radio-btn-inputs">
+                                                                        <span class="crediCard-brand-selection-radio-btn-style-area"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!--installment and other options area  -->
+                                <div class="payment-credi-card-header-text-area">
+                                    Please choose your installment number below.
+                                    If you have a credit card and a card other than the above, installments will not be made.
+                                </div>
+
+
+
+                                <div class="payment-credi-card-header-text-installment-area">
+                                    <div class="payment-credi-card-header-text-installment-header-area">Installment Selection</div>
+
+                                    <div class="payment-credi-card-header-text-installment-detail-area">
+                                        <div class="payment-credi-card-installment-radio-btn-area">
+                                            <label class="payment-credi-card-installment-radio-btn-restrict-area">
+                                                <input type="radio" name="credi-card-installment-selections" checked="checked" value="1" class="payment-credi-card-installment-radio-btn-inputs">
+                                                <span class="payment-credi-card-installment-radio-btn-style-area"></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="payment-credi-card-installment-number-restrict-area">
+                                            <div class="payment-credi-card-installment-number-text">
+                                                Single payment
+                                            </div>
+                                       
+                                            <div class="payment-credi-card-installment-rate-number-text">
+                                                1 x 850,00 $
+                                           </div>
+                                       
+                                            <div class="payment-credi-card-installment-total-pay-text">
+                                                850,00 $
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    
+                                    <div class="payment-credi-card-header-text-installment-detail-area">
+                                        <div class="payment-credi-card-installment-radio-btn-area">
+                                            <label class="payment-credi-card-installment-radio-btn-restrict-area">
+                                                <input type="radio" name="credi-card-installment-selections" value="1" class="payment-credi-card-installment-radio-btn-inputs">
+                                                <span class="payment-credi-card-installment-radio-btn-style-area"></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="payment-credi-card-installment-number-restrict-area">
+                                            <div class="payment-credi-card-installment-number-text">
+                                                Two installments
+                                            </div>
+                                       
+                                            <div class="payment-credi-card-installment-rate-number-text">
+                                                2 x 170,00 $
+                                           </div>
+                                       
+                                            <div class="payment-credi-card-installment-total-pay-text">
+                                                850,00 $
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                   
+                                    <div class="payment-credi-card-header-text-installment-detail-area">
+                                        <div class="payment-credi-card-installment-radio-btn-area">
+                                            <label class="payment-credi-card-installment-radio-btn-restrict-area">
+                                                <input type="radio" name="credi-card-installment-selections" value="1" class="payment-credi-card-installment-radio-btn-inputs">
+                                                <span class="payment-credi-card-installment-radio-btn-style-area"></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="payment-credi-card-installment-number-restrict-area">
+                                            <div class="payment-credi-card-installment-number-text">
+                                                Three installments
+                                            </div>
+                                       
+                                            <div class="payment-credi-card-installment-rate-number-text">
+                                                3 x 283,33 $
+                                           </div>
+                                       
+                                            <div class="payment-credi-card-installment-total-pay-text">
+                                                850,00 $
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="payment-credi-card-header-text-installment-detail-area">
+                                        <div class="payment-credi-card-installment-radio-btn-area">
+                                            <label class="payment-credi-card-installment-radio-btn-restrict-area">
+                                                <input type="radio" name="credi-card-installment-selections" value="1" class="payment-credi-card-installment-radio-btn-inputs">
+                                                <span class="payment-credi-card-installment-radio-btn-style-area"></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="payment-credi-card-installment-number-restrict-area">
+                                            <div class="payment-credi-card-installment-number-text">
+                                                Four installments
+                                            </div>
+                                       
+                                            <div class="payment-credi-card-installment-rate-number-text">
+                                                4 x 212,50 $
+                                           </div>
+                                       
+                                            <div class="payment-credi-card-installment-total-pay-text">
+                                                850,00 $
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="payment-credi-card-header-text-installment-detail-area">
+                                        <div class="payment-credi-card-installment-radio-btn-area">
+                                            <label class="payment-credi-card-installment-radio-btn-restrict-area">
+                                                <input type="radio" name="credi-card-installment-selections" value="1" class="payment-credi-card-installment-radio-btn-inputs">
+                                                <span class="payment-credi-card-installment-radio-btn-style-area"></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="payment-credi-card-installment-number-restrict-area">
+                                            <div class="payment-credi-card-installment-number-text">
+                                                Five installments
+                                            </div>
+                                       
+                                            <div class="payment-credi-card-installment-rate-number-text">
+                                                5 x 170,00 $
+                                           </div>
+                                       
+                                            <div class="payment-credi-card-installment-total-pay-text">
+                                                850,00 $
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+
+                           <!--Movil payment-->
+
+                           <div id="mobil-payment" class="payment-mobil-payment-area" style="display:none">
+                                <div class="payment-mobil-payment-header-area">Payment via Mobile </div>
+                                <div class="payment-mobil-payment-header-text-area">
+                                    Type the mobile phone number you want to use for payment in the relevant field below. Please consider your GSM operator's payment limit restrictions when making a payment.
+                                </div>
+                                <div class="mobile-payment-phone-number-area">
+                                    <input type="phone" name="mobile-GSM" class="form-elements-text-inputs" style="text-align:center;color:#f90;font-weight: bold; box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.5);" placeholder="Enter Phone Number">
+                                </div>
+                         </div>
+                        <!--Bank-card payment-->
+
+                        <div id="bank-card-payment" class="bank-card-payment-area" style="display:none">
+                            <div class="payment-bank-card-header-area">Payment via Bank-Card </div>
+                            <div class="payment-bank-card-header-text-area">
+                                Please complete your payment by entering your Bank card number.
+                            </div>
+                            <div class="bank-card-number-area">
+                                <input type="text" id="bank-card-number" name="Bank-Card" class="form-elements-text-inputs" style="text-align:center;color:#f90;font-weight: bold; box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.5);" placeholder="Enter Card Number">
+                            </div>
+                        </div>
+
+                         
+
+
+
+
+                       </div>
+               </form>
+
+                <div id="full-page-cartPage-right-area">
+                    <div class="full-page-cartPage-right-area">
+                        <div class="full-page-cartPage-right-area-header">
+                            Cart
+                        </div>
+                        <div class="full-page-cartPage-right-text-area">
+                            Shopping cart summary.
+                        </div>    
+                    </div>
+
+                    <div class="full-page-cartPage-right-area-priceThatPayed-header-area">The Price Including Tax</div>
+                    <div class="full-page-cartPage-right-area-priceThatPayed-priceTotal-area">1.000,00 $</div>
+                    <div class="full-page-cartPage-right-button-area">
+                        <a href="basketEmpty.html" target="_blank" onclick="$.FormSubmit()">
+                            <span class="full-page-cartPage-right-button-area-complete-icon"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></span>
+                            <span class="full-page-cartPage-right-button-area-complete-text">Complete the payment</span>
+                        </a>
+                    </div>
+
+                    <div class="full-page-cartPage-right-full-price-all-included">The Price Including Tax</div>
+                    <div class="full-page-cartPage-right-full-price-all-included-text-area">850,00 $</div>
+
+                    <div class="full-page-cartPage-right-full-price-all-included-discount-header">Total Discount</div>
+                    <div class="full-page-cartPage-right-full-price-all-included-discount-number">150,00 $</div>
+
+                    <div class="full-page-cartPage-right-full-price-all-included-discount-header">Shipping cost</div>
+                    <div class="full-page-cartPage-right-full-price-all-included-discount-number">4,99 $</div>
+                </div>
+
+            </div>
+           </div>
+        </main>
+    
+        <footer>
+            <div id="footer-menu-area">
+                <div id="footer-menu-restricted-area">
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Corporate</div>
+                        <div class="footer-menu-column-menu-area"><a href="aboutUs.html" target="_top">About Us</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="bankAccounts.html" target="_top">Bank Accounts</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="transferReportForm.html" target="_top">Transfer Report Form</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="ourDealers.html" target="_top">Our Dealers</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="dealershipAppForm.html" target="_top">Dealership Application Form</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="contact.html" target="_top">Contact</a></div>                        
+                    </div>
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Membership & Services</div>
+
+                        <!--
+
+                        <div class="footer-menu-column-menu-area"><a href="signIn.html" target="_top">Sign In</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="register.html" target="_top">Register</a></div> 
+
+                        -->                       
+                        <div class="footer-menu-column-menu-area"><a href="delivery.html" target="_top">Delivery</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="whereCargo.html" target="_top">Where is my cargo?</a></div>                        
+                        <!-- if user signed in
+                        -->
+                        <div class="footer-menu-column-menu-area"><a href="myAccount.html" target="_top">My Account</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="signOut.html" target="_top">Logout</a></div>            
+                        <div class="footer-menu-column-menu-area"><a href="faq.html" target="_top">Frequently Asked Questions</a></div>
+                            
+                    </div>
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Contracts</div>
+                        <div class="footer-menu-column-menu-area"><a href="membershipAgr.html" target="_top">Membership Agreement</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="dealershipAgr.html" target="_top">Dealership Agreement</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="termofuse.html" target="_top">Terms of Use</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="privacy.html" target="_top">Privacy and Security </a></div>
+                        <div class="footer-menu-column-menu-area"><a href="dsa.html" target="_top">Distance Sales Agreement</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="pcrr.html" target="_top">Product Cancel, Repayment and Replacement </a></div>                        
+                    </div>
+
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Follow Us</div>
+                        <div class="footer-menu-column-menu-area"><a href="http://facebook.com/" target="_blank">Facebook <i class="fa-brands fa-facebook fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://twitter.com/" target="_blank">Twitter <i class="fa-brands fa-square-twitter fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://instegram.com/" target="_blank">Instagram <i class="fa-brands fa-square-instagram fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://linkedin.com/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://youtube.com/" target="_blank">Youtbe <i class="fa-brands fa-youtube fa-lg"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom-text-area">
+                <div id="footer-bottom-text-restrict-area">
+                    Copyright &copy; 2022-2023 All Rights Reserved HIB.
+                </div>
+            </div>
+            <div id="footer-bottom-logo-area">
+                <div id="footer-bottom-logo-restricted-area">
+                    <div class="footer-bottom-logo"><i class="fa-brands fa-expeditedssl fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-solid fa-shield-halved fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-brands fa-cc-visa fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-brands fa-cc-mastercard fa-2x"></i></div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+</body>
+</html>

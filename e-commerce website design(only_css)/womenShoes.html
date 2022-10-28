@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link type="image/png" rel="icon" size="512x512" href="icons/shoes.png">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="revisit-after" content="7 Days">
+    <meta name="rating" content="general">
+    <meta name="copyright" content="Copyright &copy; 2022-2023 Halil Ibrahim BAYAT All rights reserved.">
+    <meta name="reply-to" content="halilibayat.com">
+    <meta name="author" content="Halil Ibrahim BAYAT - programmer">
+    <meta name="designer" content="Halil Ibrahim BAYAT">
+    <meta name="generator" content="Visual Studio Code Vcode">
+    <meta name="description" content="Best online shoes shopping web site. You can find all kind shoes that you needed. Sport, Outdoor, Running, Classic">
+    <meta name="keywords" content="Shop, shoping,shoes,sport shoes">
+    <script type="text/javascript" language="javascript" src="framework/jquery-3.6.1.min.js"></script>
+    <title>Shoes Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/28f6175930.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="all-page">
+        <header>
+            <div id="header-area">
+                <div id="header-message">                    
+                    <img id="header-message-img1" src="imgs/shoes_banner.png" alt="banner">                  
+                </div>
+                <div class="header-manu">                
+                    <div class="header-manu-top">
+                        <div class="header-manu-top-restrict-area">
+                            <ul class="header-manu-top-options">
+                                <!--User no sign in -->
+                                <li class="manu-option"><a href="signIn.html"> <i class="fa-solid fa-right-to-bracket fa-lg"></i></a></li>
+                                <li class="manu-option"><a href="signIn.html">Sign In</a></li>
+                                <li class="manu-option"><a href="register.html"><i class="fa-solid fa-user-plus fa-lg"></i></a></li>
+                                <li class="manu-option"> <a href="register.html">Register</a></li>
+                                <li class="manu-option"> <a href="basket.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
+                                <li class="manu-option"> <a href="basket.html">Shopping Basket</a></li>
+                                
+                                <!-- user already singed up-->   
+                                
+                                 <!--   
+                                <li class="manu-option"><a href="signOut.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                                <li class="manu-option"><a href="signOut.html">Sign Out</a></li>
+                                <li class="manu-option"><a href="myAccount.html"><i class="fa-regular fa-user"></i></a></li>
+                                <li class="manu-option"><a href="myAccount.html">My Account</a></li>
+                                <li class="manu-option"><a href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li class="manu-option"><a href="basket.html">Shopping Basket</a></li> 
+                                --> 
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="header-manu-restricted-area">
+                        <div id="header-manu-logo-area">
+                            <a href="index.html"><img src="icons/logo_shoes2.png" alt="logo"></a>                                
+                        </div>
+                        <div id="header-manu-nav-area">
+                            <nav id="header-manu-nav">
+                                <ul id="header-manu-options-area">
+                                    <li class="header-manu-option"><a href="index.html">Home</a></li>
+                                    <li class="header-manu-option"><a href="manShoes.html">Man Shoes</a></li>
+                                    <li class="header-manu-option"><a href="womenShoes.html">Woman Shoes</a></li>
+                                    <li class="header-manu-option"><a href="kidShoes.html">Kids Shoes</a></li>
+                                </ul>
+                            </nav>                            
+                        </div>
+                        
+                        <div id="header-new-manu">
+                            <i class="fa-solid fa-bars fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-manu-opened-area" style="display:none;">
+                    <div id="header-manu-opened-button">
+                        <ul id="header-manu-opened-button-options">
+                            <li class="header-manu-opened-option"><a href="index.html">Home</a></li>
+                            <li class="header-manu-opened-option"><a href="manShoes.html">Man Shoes</a></li>
+                            <li class="header-manu-opened-option"><a href="womenShoes.html">Woman Shoes</a></li>
+                            <li class="header-manu-opened-option"><a href="kidShoes.html">Kids Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+
+            <div id="main-full-page-area">
+                <div id="main-full-page-restricted-area">
+
+
+                    <div id="main-full-page-left-column-restricted-area">
+                        <div id="main-full-page-left-column-menu-area">
+                            <div id="main-full-page-left-column-menu-upper-header-area">
+                                <a href="manShoes.html" target="_top">Female Shoes (12)</a>
+                            </div>
+                            <div id="main-full-page-left-column-menu-down-cate-menu-header">
+                                <i class="fa-solid fa-caret-down"></i> <span class="main-full-page-left-column-menu-name-area"> <a href="womenShoes.html">All Products</a></span>
+
+                            </div>
+
+                            <div id="main-full-page-left-column-down-menu-options-area">
+                                <ul id="main-full-page-left-column-down-menu-options">
+                                    <li class="main-full-page-left-column-down-menu-option">
+                                        <i class="fa-solid fa-caret-right"></i> <a href="womenShoes.html" target="_top">Daily Shoes</a>
+                                    </li>
+                                    <li class="main-full-page-left-column-down-menu-option">
+                                        <i class="fa-solid fa-caret-right"></i> <a href="womenShoes.html" target="_top">Classic Shoes</a>
+                                    </li>
+                                    <li class="main-full-page-left-column-down-menu-option">
+                                        <i class="fa-solid fa-caret-right"></i> <a href="womenShoes.html" target="_top">Sport Shoes</a>
+                                    </li>
+                                    <li class="main-full-page-left-column-down-menu-option">
+                                        <i class="fa-solid fa-caret-right"></i> <a href="womenShoes.html" target="_top">Boots</a>
+                                    </li>
+                                    <li class="main-full-page-left-column-down-menu-option">
+                                        <i class="fa-solid fa-caret-right"></i> <a href="womenShoes.html" target="_top">Slippers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="main-full-page-right-column-restricted-area">
+                        <div id="main-full-page-right-column-research-area">
+                            <form action="womenShoes.html" method="get">
+                                <div class="main-full-page-right-column-container-for-btn"><input type="submit"  value="" class="main-full-page-right-column-make-research-btn"></div>
+                                <div class="main-full-page-right-column-inputs-container"><input type="text" name="search" class="main-full-page-right-column-research-text-inputs"></div>
+                            </form>
+                        </div>
+
+                        <div id="full-page-right-products-area">
+                            <div id="full-page-right-products-balance-area">
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/2.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/3.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/4.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/5.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/6.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/7.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/8.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/4.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/6.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Fermale Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/2.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/3.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/4.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/5.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/6.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/7.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/8.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/4.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Fale Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="full-page-right-products-restricted-area">
+                                    <div class="full-page-right-products-img-outline-border">
+                                        <a href="product-detail.html"><img src="products/female/6.jpg" alt=""></a> 
+                                    </div>
+                                    <div class="full-page-right-products-upper-header-text">
+                                        <a href="product-detail.html">Female Shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-under-header-text">
+                                       <a href="product-detail.html">Classic brown shoes</a>
+                                    </div>
+                                    <div class="full-page-right-products-start-area">
+                                        <a href=""><img src="imgs/YildizCizgiliDortDolu.png" alt=""></a>
+                                    </div>
+                                    <div class="full-page-right-products-price-area">
+                                        <span class="full-page-right-products-price-normal"><a href="womenShoes.html"><del>250,00</del>$</a></span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="full-page-right-products-price-discount"><a href="womenShoes.html">170,00 $</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="dealer-page-icons-area">
+                        <div class="dealer-page-icons-area-text">
+                            Total <b>17</b> records have been found in <b>9</b> pages.
+                        </div>
+                        <div class="dealer-page-icons-area-num">
+                            <span><a href=""><i class="fa-solid fa-backward-step"></i></a></span>
+                            <span><a href=""><i class="fa-solid fa-caret-left"></i></a></span>
+
+                            <span><a class="dealer-page-icons-area-number-passive" href="womenShoes.html">1</a></span>
+                            <span><a class="dealer-page-icons-area-number-passive" href="womenShoes.html">2</a></span>
+                            <span><a class="dealer-page-icons-area-number-passive" href="womenShoes.html">3</a></span>
+                            <span><a  class="dealer-page-icons-area-number-passive"href="womenShoes.html">4</a></span>
+
+                            <span><a class="dealer-page-icons-area-number-active" href="womenShoes.html">5</a></span>
+
+                            <span><a class="dealer-page-icons-area-number-passive"href="womenShoes.html">6</a></span>
+                            <span><a class="dealer-page-icons-area-number-passive" href="womenShoes.html">7</a></span>
+                            <span><a class="dealer-page-icons-area-number-passive" href="womenShoes.html">8</a></span>
+                            <span><a class="dealer-page-icons-area-number-passive" href="womenShoes.html">9</a></span>
+
+                            <span><a href=""><i class="fa-solid fa-caret-right"></i></a></span>
+                            <span><a href=""><i class="fa-solid fa-forward-step"></i></a></span>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </main>
+    
+        <footer>
+            <div id="footer-menu-area">
+                <div id="footer-menu-restricted-area">
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Corporate</div>
+                        <div class="footer-menu-column-menu-area"><a href="aboutUs.html" target="_top">About Us</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="bankAccounts.html" target="_top">Bank Accounts</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="transferReportForm.html" target="_top">Transfer Report Form</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="ourDealers.html" target="_top">Our Dealers</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="dealershipAppForm.html" target="_top">Dealership Application Form</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="contact.html" target="_top">Contact</a></div>                        
+                    </div>
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Membership & Services</div>
+
+                        <!--
+
+                        <div class="footer-menu-column-menu-area"><a href="signIn.html" target="_top">Sign In</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="register.html" target="_top">Register</a></div> 
+
+                        -->                       
+                        <div class="footer-menu-column-menu-area"><a href="delivery.html" target="_top">Delivery</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="whereCargo.html" target="_top">Where is my cargo?</a></div>                        
+                        <!-- if user signed in
+                        -->
+                        <div class="footer-menu-column-menu-area"><a href="myAccount.html" target="_top">My Account</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="signOut.html" target="_top">Logout</a></div>            
+                        <div class="footer-menu-column-menu-area"><a href="faq.html" target="_top">Frequently Asked Questions</a></div>
+                            
+                    </div>
+
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Contracts</div>
+                        <div class="footer-menu-column-menu-area"><a href="membershipAgr.html" target="_top">Membership Agreement</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="dealershipAgr.html" target="_top">Dealership Agreement</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="termofuse.html" target="_top">Terms of Use</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="privacy.html" target="_top">Privacy and Security </a></div>
+                        <div class="footer-menu-column-menu-area"><a href="dsa.html" target="_top">Distance Sales Agreement</a></div>
+                        <div class="footer-menu-column-menu-area"><a href="pcrr.html" target="_top">Product Cancel, Repayment and Replacement </a></div>                        
+                    </div>
+
+                    <div class="footer-menu-columns-area">
+                        <div class="footer-menu-column-header">Follow Us</div>
+                        <div class="footer-menu-column-menu-area"><a href="http://facebook.com/" target="_blank">Facebook <i class="fa-brands fa-facebook fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://twitter.com/" target="_blank">Twitter <i class="fa-brands fa-square-twitter fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://instegram.com/" target="_blank">Instagram <i class="fa-brands fa-square-instagram fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://linkedin.com/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin fa-lg"></i></a></div>
+                        <div class="footer-menu-column-menu-area"><a href="http://youtube.com/" target="_blank">Youtbe <i class="fa-brands fa-youtube fa-lg"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom-text-area">
+                <div id="footer-bottom-text-restrict-area">
+                    Copyright &copy; 2022-2023 All Rights Reserved HIB.
+                </div>
+            </div>
+            <div id="footer-bottom-logo-area">
+                <div id="footer-bottom-logo-restricted-area">
+                    <div class="footer-bottom-logo"><i class="fa-brands fa-expeditedssl fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-solid fa-shield-halved fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-brands fa-cc-visa fa-2x"></i></div>
+                    <div class="footer-bottom-logo"><i class="fa-brands fa-cc-mastercard fa-2x"></i></div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
