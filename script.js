@@ -24,6 +24,9 @@ function addingtoList(e){
     // appending todoLi to Div element as a child
     todoDiv.appendChild(todoLi);
 
+    // adding local storage
+    saveList(inputText.value);
+
     // creating check btns 
     const completeBtn       =   document.createElement("button");
     completeBtn.innerHTML   = '<i class="fa-solid fa-square-check"></i>';
@@ -87,4 +90,19 @@ function fiterOptions(e){
                 break; 
         }
     }
+}
+
+// save list to local storage
+
+function saveList(list){
+    // check file whater already exis or not
+    let todoList;
+    if(localStorage.getItem("todoList") === "null"){
+        todoList = [];
+    }else{
+        todoList = JSON.parse(localStorage.getItem("todoList"));
+    }
+
+    todoList.push(list);
+    localStorage.setItem("todoList",JSON.stringify(todoList));
 }
